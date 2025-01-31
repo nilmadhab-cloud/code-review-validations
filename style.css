@@ -1,0 +1,35 @@
+.canvas {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #ccc;
+    background: #f8f8f8;
+    margin: 20px;
+}
+.cursor {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+    pointer-events: none;
+    margin: -4px;
+    z-index: 2;
+}
+.box {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 128px;
+    height: 128px;
+    background: rgba(59, 130, 246, 0.5);
+    border: 2px solid rgb(37, 99, 235);
+    will-change: transform;
+}
+.info {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    font-size: 14px;
+    color: #666;
+}
